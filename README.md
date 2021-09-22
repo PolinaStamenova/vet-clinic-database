@@ -1,4 +1,4 @@
-# curriculum-databases-projects-template
+# Vet clinic database:
 
 > Use a relational database to create the data structure for a vet clinic, with data about:
 > animals
