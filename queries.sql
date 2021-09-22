@@ -59,3 +59,28 @@ UPDATE animals SET weight_kg = (weight_kg * -1);
 ROLLBACK TO DELETE_DATE;
 UPDATE animals SET weight_kg = (weight_kg * -1) WHERE weight_kg < 0;
 COMMIT TRANSACTION;
+
+
+-- How many animals are there?
+
+SELECT COUNT (*) FROM animals;
+
+-- How many animals have never tried to escape?
+
+SELECT COUNT(*) FROM animals WHERE escape_attempts > 0;
+
+-- What is the average weight of animals?
+
+SELECT AVG(weight_kg) FROM animals;
+
+-- Who escapes the most, neutered or not neutered animals?
+
+SELECT neutered, SUM(escape_attempts) FROM animals GROUP BY neutered;
+
+-- What is the minimum and maximum weight of each type of animal?
+
+SELECT neutered, MIN(weight_kg), MAX(weight_kg) FROM animals GROUP BY neutered;
+
+-- What is the average number of escape attempts per animal type of those born between 1990 and 2000?
+
+SELECT neutered, AVG(escape_attempts) FROM animals WHERE date_part('year', date_of_birth) BETWEEN 1990 AND 2000 GROUP BY neutered;
