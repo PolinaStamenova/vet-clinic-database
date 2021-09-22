@@ -8,4 +8,4 @@ CREATE TABLE animals (id INT GENERATED ALWAYS AS IDENTITY, name VARCHAR(100), da
 
 -- TASK 2 - Add a column species of type string to your animals --
 
-ALTER TABLE animals ADD COLUMN species VARCHAR;
+ALTER TABLE animals ADD COLUMN species VARCHAR(100);
