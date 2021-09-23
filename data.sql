@@ -29,7 +29,7 @@ INSERT INTO species ( name ) VALUES ('Digimon');
 
 BEGIN TRANSACTION;
 UPDATE animals SET species_id = 1 WHERE name LIKE '%mon';
-UPDATE animals SET species_id = 4 WHERE species_id IS NULL;
+UPDATE animals SET species_id = 2 WHERE species_id IS NULL;
 COMMIT TRANSACTION;
 
 BEGIN TRANSACTION;
