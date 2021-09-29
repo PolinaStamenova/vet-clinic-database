@@ -6,6 +6,8 @@
 > clinic employees
 > visits
 
+> Use indexes to improve query performance
+
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
@@ -20,6 +22,12 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 - GitHub: [@githubhandle](https://github.com/PolinaStamenova)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/polina-stamenova-a60766112/)
+
+👤 **Akasha Rojee**
+
+- GitHub: [@AkashaRojee](https://github.com/AkashaRojee)
+- Twitter: [@AkashaRojee](https://twitter.com/AkashaRojee)
+- LinkedIn: [Akasha Rojee](https://linkedin.com/in/AkashaRojee)
 
 ## 🤝 Contributing
 
