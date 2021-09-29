@@ -49,10 +49,10 @@ CREATE INDEX IX_animals_visits_id ON visits (animals_id);
 DROP INDEX IX_animals_visits_id;
 
 -- Optimize visits table by creating an Index using the vets_id column
-CREATE INDEX IX_vets_id ON visits (vets_id);
+CREATE INDEX IX_vets_id ON visits (vets_id ASC);
 DROP INDEX IX_vets_id;
 
--- -- Optimize owners table by creating an Index using the email column
+-- Optimize owners table by creating an Index using the email column
 CREATE INDEX IX_email_id ON owners (email ASC);
 DROP INDEX IX_email_id;
 
